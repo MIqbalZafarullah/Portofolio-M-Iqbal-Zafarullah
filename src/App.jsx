@@ -585,7 +585,7 @@ const HomeView = ({ onOpenCV }) => {
         {/* Available badge */}
         <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/25 text-green-400 text-xs font-bold px-4 py-1.5 rounded-full mb-4 z-10 relative">
           <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          Available for collaboration
+          Available for Collaboration
         </div>
 
         {/* Typewriter */}
