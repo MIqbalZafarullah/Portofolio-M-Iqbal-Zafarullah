@@ -432,7 +432,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 // --- KOMPONEN: CV VIEWER MODAL ---
 const CVViewerModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
-  const cvPath = '/CV M Iqbal Zafarullah.pdf';
+  const cvPath = './CV M Iqbal Zafarullah.pdf';
   return (
     <div className="fixed inset-0 z-[200] flex items-center justify-center p-3 md:p-6 animate-in fade-in duration-300">
       <div className="absolute inset-0 bg-[#070b19]/90 backdrop-blur-md" onClick={onClose}></div>
