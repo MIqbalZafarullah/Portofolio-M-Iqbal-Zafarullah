@@ -432,7 +432,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 // --- KOMPONEN: CV VIEWER MODAL ---
 const CVViewerModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
-  const cvPath = './CV M Iqbal Zafarullah.pdf';
+  const cvPath = '/Portofolio-M-Iqbal-Zafarullah/CV M Iqbal Zafarullah.pdf';
   return (
     <div className="fixed inset-0 z-[200] flex items-center justify-center p-3 md:p-6 animate-in fade-in duration-300">
       <div className="absolute inset-0 bg-[#070b19]/90 backdrop-blur-md" onClick={onClose}></div>
@@ -578,7 +578,7 @@ const HomeView = ({ onOpenCV }) => {
         {/* Photo */}
         <div className="relative z-10 mb-6">
           <div className="relative w-32 h-32 md:w-44 md:h-44 rounded-full p-1 bg-gradient-to-br from-indigo-500/60 to-purple-500/60 shadow-2xl shadow-indigo-500/40 mx-auto group">
-            <img src="foto-profil.jpg" alt="M. Iqbal Zafarullah" className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500" />
+            <img src="/Portofolio-M-Iqbal-Zafarullah/foto-profil.jpg" alt="M. Iqbal Zafarullah" className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
 
