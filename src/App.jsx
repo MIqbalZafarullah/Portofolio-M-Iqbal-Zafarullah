@@ -578,7 +578,7 @@ const HomeView = ({ onOpenCV }) => {
         {/* Photo */}
         <div className="relative z-10 mb-6">
           <div className="relative w-32 h-32 md:w-44 md:h-44 rounded-full p-1 bg-gradient-to-br from-indigo-500/60 to-purple-500/60 shadow-2xl shadow-indigo-500/40 mx-auto group">
-            <img src="/foto-profil.jpg" alt="M. Iqbal Zafarullah" className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500" />
+            <img src="foto-profil.jpg" alt="M. Iqbal Zafarullah" className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
 
