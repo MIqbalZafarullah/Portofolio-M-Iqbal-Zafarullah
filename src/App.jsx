@@ -254,9 +254,9 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
   const nextImg = () => setCurrentImg((prev) => (prev + 1) % project.gallery.length);
   const prevImg = () => setCurrentImg((prev) => (prev === 0 ? project.gallery.length - 1 : prev - 1));
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-8 animate-in fade-in duration-300">
+    <div className="fixed inset-0 z-[200] flex items-center justify-center px-3 pt-4 pb-[80px] md:p-8 animate-in fade-in duration-300">
       <div className="absolute inset-0 bg-[#070b19]/90 backdrop-blur-md" onClick={onClose}></div>
-      <div className="relative w-full max-w-5xl bg-[#12103D]/90 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl shadow-indigo-500/20 transform scale-100 animate-in zoom-in-95 duration-300 flex flex-col max-h-full overflow-hidden interactive-card">
+      <div className="relative w-full max-w-5xl bg-[#12103D]/90 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl shadow-indigo-500/20 transform scale-100 animate-in zoom-in-95 duration-300 flex flex-col max-h-full overflow-hidden interactive-card" style={{maxHeight:'calc(100vh - 100px)'}}>
         <div className="flex justify-between items-center p-6 border-b border-white/10 relative z-10">
           <div>
             <span className="text-xs font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-3 py-1 rounded-full mb-2 inline-block">{project.category}</span>
@@ -264,7 +264,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
           </div>
           <button onClick={onClose} className="text-gray-400 hover:text-white transition-colors bg-white/5 p-3 rounded-full hover:bg-white/10"><X size={24} /></button>
         </div>
-        <div className="flex-1 overflow-y-auto p-6 md:p-8 flex flex-col lg:flex-row gap-8">
+        <div className="flex-1 overflow-y-auto overscroll-contain p-5 md:p-8 flex flex-col lg:flex-row gap-8" style={{WebkitOverflowScrolling:'touch'}}>
           <div className="lg:w-1/2 space-y-4">
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-black/50 border border-white/10 group">
               <img src={project.gallery[currentImg]} alt="Project Detail" className="w-full h-full object-cover transition-all duration-500" />
@@ -291,7 +291,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }) => {
 const ExperienceDetailModal = ({ exp, isOpen, onClose }) => {
   if (!isOpen || !exp) return null;
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-8 animate-in fade-in duration-300">
+    <div className="fixed inset-0 z-[200] flex items-center justify-center px-3 pt-4 pb-[80px] md:p-8 animate-in fade-in duration-300">
       <div className="absolute inset-0 bg-[#070b19]/90 backdrop-blur-md" onClick={onClose}></div>
       <div className="relative w-full max-w-3xl bg-[#12103D]/95 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl shadow-indigo-500/20 transform scale-100 animate-in zoom-in-95 duration-300 flex flex-col overflow-hidden interactive-card">
         <div className="flex justify-between items-center p-6 border-b border-white/10 relative z-10">
@@ -301,7 +301,7 @@ const ExperienceDetailModal = ({ exp, isOpen, onClose }) => {
           </div>
           <button onClick={onClose} className="text-gray-400 hover:text-white transition-colors bg-white/5 p-3 rounded-full hover:bg-white/10"><X size={20} /></button>
         </div>
-        <div className="p-6 md:p-8 overflow-y-auto max-h-[70vh]">
+        <div className="p-5 md:p-8 overflow-y-auto overscroll-contain" style={{maxHeight:'calc(100vh - 200px)', WebkitOverflowScrolling:'touch'}}>
           <div className="mb-8">
             <h4 className="text-white font-bold mb-4 flex items-center gap-2"><Building2 size={18} className="text-indigo-400" /> Tanggung Jawab Utama</h4>
             <ul className="space-y-3">{exp.responsibilities.map((task, i) => (<li key={i} className="flex items-start gap-3 text-gray-300 text-sm"><div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 shrink-0"></div><span>{task}</span></li>))}</ul>
@@ -323,14 +323,14 @@ const ExperienceDetailModal = ({ exp, isOpen, onClose }) => {
 const CertificateModal = ({ cert, isOpen, onClose }) => {
   if (!isOpen || !cert) return null;
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-8 animate-in fade-in duration-300">
+    <div className="fixed inset-0 z-[200] flex items-center justify-center px-3 pt-4 pb-[80px] md:p-8 animate-in fade-in duration-300">
       <div className="absolute inset-0 bg-[#070b19]/90 backdrop-blur-md" onClick={onClose}></div>
       <div className="relative w-full max-w-3xl bg-[#12103D]/95 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl shadow-indigo-500/20 transform scale-100 animate-in zoom-in-95 duration-300 flex flex-col overflow-hidden interactive-card">
         <div className="flex justify-between items-center p-5 md:p-6 border-b border-white/10 relative z-10">
           <div><span className="text-xs font-bold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-3 py-1 rounded-full mb-2 inline-block">{cert.category}</span><h2 className="text-xl md:text-2xl font-bold text-white">{cert.title}</h2></div>
           <button onClick={onClose} className="text-gray-400 hover:text-white transition-colors bg-white/5 p-3 rounded-full hover:bg-white/10"><X size={20} /></button>
         </div>
-        <div className="p-5 md:p-8 flex flex-col items-center overflow-y-auto max-h-[75vh]">
+        <div className="p-5 md:p-8 flex flex-col items-center overflow-y-auto overscroll-contain" style={{maxHeight:'calc(100vh - 200px)', WebkitOverflowScrolling:'touch'}}>
           <div className="w-full bg-black/40 rounded-xl p-2 border border-white/10 mb-6 shadow-inner"><img src={cert.image} alt={cert.title} className="w-full h-auto max-h-[400px] object-contain rounded-lg shadow-lg" /></div>
           <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10">
             <div><p className="text-gray-300 font-medium mb-1">Diterbitkan oleh: <span className="text-white font-bold">{cert.issuer}</span></p><p className="text-gray-400 text-sm">Tahun Penerbitan: <span className="text-indigo-300">{cert.year}</span></p></div>
@@ -993,10 +993,66 @@ const GithubIcon = ({ size = 20 }) => (
 const WorksView = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const projectsData = [
-    { id: 1, title: 'Budgetku Web App', category: 'Web Dev', tech: 'PHP, MySQL', desc: 'Aplikasi web manajemen keuangan pribadi yang membantu pengguna melacak aktivitas finansial.', gallery: ['https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800'], techList: ['PHP', 'MySQL', 'CSS3', 'JS'], background: 'Mahasiswa sering kesulitan melacak pengeluaran harian.', solution: 'Membangun aplikasi responsif dengan dashboard analisis.', githubUrl: 'https://github.com/iqbalzafarullah' },
-    { id: 2, title: 'BibokSalad UI/UX', category: 'UI/UX', tech: 'Figma', desc: 'Prototipe antarmuka website responsif yang menerapkan prinsip desain user-centered.', gallery: ['https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=800'], techList: ['Figma', 'Prototyping', 'UX Research'], background: 'Toko makanan sehat butuh UX intuitif untuk pemesanan salad kustom.', solution: 'Desain ulang alur checkout satu halaman.', githubUrl: 'https://github.com/iqbalzafarullah' },
-    { id: 3, title: 'HydroGreen IoT', category: 'IoT', tech: 'IoT, Arduino', desc: 'Sistem hidroponik cerdas berbasis IoT untuk mengatasi keterbatasan lahan pertanian.', gallery: ['https://images.unsplash.com/photo-1530836369250-ef71a3f5e481?q=80&w=800'], techList: ['Arduino', 'C++', 'IoT Sensors'], background: 'Lahan perkotaan Bengkulu yang sempit mempersulit pertanian.', solution: 'Sensor monitoring pH & Nutrisi otomatis via smartphone.', githubUrl: 'https://github.com/iqbalzafarullah' },
-    { id: 4, title: 'Spider-Man 2D Game', category: 'Game', tech: 'Java', desc: 'Video game arcade 2D dengan aset karakter dan logika level yang dirancang mandiri.', gallery: ['https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800'], techList: ['Java', 'Greenfoot', 'OOP'], background: 'Tugas akhir mata kuliah OOP.', solution: 'Implementasi pewarisan dan polimorfisme dalam game arcade.', githubUrl: 'https://github.com/iqbalzafarullah' }
+    {
+      id: 1,
+      title: "Spider-Man: GF of Chaos — 2D Game",
+      category: 'Game Dev',
+      tech: 'Java · Greenfoot',
+      desc: 'Video game arcade 2D bertema Spider-Man dengan 3 level, sistem skor, dan logika musuh yang dirancang sepenuhnya dari nol menggunakan OOP.',
+      gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/spiderman-game.jpg'],
+      techList: ['Java', 'Greenfoot', 'OOP', 'Game Design'],
+      background: 'Dibuat sebagai tugas akhir mata kuliah Pemrograman Berorientasi Objek (OOP). Tantangannya adalah merancang game yang menerapkan konsep inheritance, polymorphism, dan encapsulation secara nyata dan menyenangkan.',
+      solution: 'Berhasil membangun game 2D lengkap dengan 3 level berbeda, sistem scoring, animasi karakter custom, layar game-over, dan mekanisme musuh yang menggunakan prinsip OOP penuh via Greenfoot framework.',
+      githubUrl: 'https://github.com/MIqbalZafarullah'
+    },
+    {
+      id: 2,
+      title: "UI Design & Web Prototype — BibokSalad",
+      category: 'UI/UX Design',
+      tech: 'Figma · Prototyping',
+      desc: 'Desain antarmuka aplikasi pemesanan salad kustom lengkap dengan alur pengguna dari pilihan menu, topping, minuman, hingga konfirmasi pesanan.',
+      gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/biboksalad-uiux.jpg'],
+      techList: ['Figma', 'UI Design', 'Prototyping', 'UX Research', 'User Flow'],
+      background: 'BibokSalad adalah UMKM salad lokal yang membutuhkan sistem pemesanan digital yang intuitif dan menarik untuk meningkatkan pengalaman pelanggan saat memesan secara online.',
+      solution: 'Merancang 12+ layar UI bertema hijau segar yang mencerminkan brand, dengan alur pemesanan yang mulus — dari pilihan jenis salad, harga, rasa cream salad, topping, minuman, hingga form konfirmasi pesanan. Prototype interaktif selesai di Figma.',
+      githubUrl: 'https://github.com/MIqbalZafarullah'
+    },
+    {
+      id: 3,
+      title: "Budgetku — Personal Finance Management",
+      category: 'Web Dev',
+      tech: 'PHP · MySQL · CSS',
+      desc: 'Aplikasi web manajemen keuangan pribadi dengan dashboard finansial, pelacak transaksi, riwayat pengeluaran, dan fitur target tabungan.',
+      gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/budgetku-webapp.jpg'],
+      techList: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'JavaScript'],
+      background: 'Mahasiswa seringkali kesulitan mengelola keuangan bulanan karena tidak ada catatan terstruktur. Kebutuhan akan tools sederhana namun powerful untuk tracking pengeluaran dan target menabung menjadi latar belakang proyek ini.',
+      solution: 'Membangun web app full-stack dengan dashboard analitik visual, sistem kategori pengeluaran kustom, fitur penetapan & monitoring target keuangan, serta laporan riwayat transaksi yang bisa difilter per kategori.',
+      githubUrl: 'https://github.com/MIqbalZafarullah'
+    },
+    {
+      id: 4,
+      title: "BiblioSys — Digital Library Platform",
+      category: 'Web Dev',
+      tech: 'Laravel · PHP · MySQL',
+      desc: 'Sistem manajemen perpustakaan digital berbasis web untuk mengelola data buku, anggota, peminjaman, dan laporan secara terpusat dengan antarmuka admin yang elegan.',
+      gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/bibliosys-library.jpg'],
+      techList: ['Laravel', 'PHP', 'MySQL', 'HTML5', 'CSS3', 'JavaScript'],
+      background: 'Perpustakaan konvensional masih mengandalkan pencatatan manual yang rawan kesalahan dan sulit dimonitor. Digitalisasi dibutuhkan untuk efisiensi pengelolaan koleksi buku, data anggota, dan sistem peminjaman.',
+      solution: 'Membangun platform manajemen perpustakaan digital lengkap dengan dashboard statistik real-time (total buku, anggota aktif, sedang dipinjam, keterlambatan), manajemen data buku & anggota, sistem peminjaman terintegrasi, dan laporan buku terpopuler.',
+      githubUrl: 'https://github.com/MIqbalZafarullah'
+    },
+    {
+      id: 5,
+      title: "D'Jadore — Luxury Fashion E-Commerce",
+      category: 'Web Dev',
+      tech: 'HTML · CSS · JavaScript',
+      desc: "Website e-commerce fashion premium dengan identitas brand D'Jadore yang elegan — menampilkan koleksi busana dengan pengalaman belanja yang mewah dan minimalis.",
+      gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/djadore-ecommerce.png'],
+      techList: ['HTML5', 'CSS3', 'JavaScript', 'UI Design', 'E-Commerce'],
+      background: "Brand fashion lokal D'Jadore membutuhkan kehadiran digital yang mencerminkan identitas mewah dan eksklusif mereka. Tantangannya adalah membangun pengalaman belanja online yang terasa premium, berkelas, dan elegan.",
+      solution: "Membangun website e-commerce dengan desain monokrom hitam-putih elegan, navigasi koleksi yang intuitif, halaman produk dengan visual detail tinggi, sistem keranjang belanja slide-out, fitur tracking pesanan, dan invoice PDF profesional.",
+      githubUrl: 'https://github.com/MIqbalZafarullah'
+    },
   ];
   return (
     <>
