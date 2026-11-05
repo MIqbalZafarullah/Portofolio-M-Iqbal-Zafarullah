@@ -321,6 +321,46 @@ export const awardData = [
     link: '#'
   },
   {
+    id: 112,
+    title: '1st Place – Popular Article Competition, Bank Indonesia (Sumatra Region)',
+    issuer: 'Bank Indonesia',
+    year: '2026',
+    category: 'Kompetisi',
+    desc: 'Won 1st Place in a national-scale popular article competition representing the Sumatra region, organized by Bank Indonesia, demonstrating strong writing skills and the ability to present insightful ideas through engaging articles.',
+    image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800',
+    link: '#'
+  },
+  {
+    id: 113,
+    title: '2nd Place – National Inovatera Competition (General Category) – NEON 2026',
+    issuer: 'National ERCOM Competition (NEON)',
+    year: '2026',
+    category: 'Kompetisi',
+    desc: 'Awarded 2nd Place as part of a team in the General Category of the National Inovatera Competition, organized by National ERCOM Competition (NEON) 2026.',
+    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800',
+    link: '#'
+  },
+  {
+    id: 114,
+    title: 'Participant – International Web Development Competition, RAFATECH 2026',
+    issuer: 'RAFATECH',
+    year: '2026',
+    category: 'Kompetisi',
+    desc: 'Participated in an international web development competition at RAFATECH 2026, demonstrating web development skills through a competitive platform.',
+    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800',
+    link: '#'
+  },
+  {
+    id: 115,
+    title: 'Participant – Infographic Competition, Brawijaya National Youth Competition 2026',
+    issuer: 'Brawijaya National Youth Competition',
+    year: '2026',
+    category: 'Kompetisi',
+    desc: 'Participated in the infographic round of the national Brawijaya Youth Competition 2026, presenting information and ideas through visual communication and creative infographic design.',
+    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=800',
+    link: '#'
+  },
+  {
     id: 109,
     title: '3rd Place – Infographic Design Competition',
     issuer: 'Kemendukbangga/BKKBN',

@@ -28,7 +28,7 @@ export const profileData = {
     degree: "Bachelor of Informatics",
     period: "2024 — Present",
     focus: "Focus: Data Analysis & UI/UX Design.",
-    gpa: "3.68",
+    gpa: "3.86",
     maxGpa: "4.00"
   },
   topCertifications: ['Dicoding Indonesia', 'Komdigi', 'Kemendukbangga', 'MySkill'],
@@ -60,4 +60,3 @@ export const toolIcons = [
   { name: 'Canva', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg' },
   { name: 'VSCode', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
 ];
-

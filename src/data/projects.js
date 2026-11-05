@@ -201,6 +201,26 @@ export const projectsData = [
   },
   {
     id: 11,
+    title: "BINAR – Youth Health Education Initiative",
+    category: 'UI/UX Design',
+    filterCategory: 'UI/UX Design',
+    date: 'Jan 2024',
+    tech: 'Canva · Digital Content · Infographic Design',
+    desc: 'Inisiatif konten edukasi kesehatan remaja digital yang mempromosikan kesadaran nutrisi, pencegahan anemia, dan gaya hidup sehat melalui media sosial.',
+    gallery: ['https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?q=80&w=1000'],
+    techList: ['Canva', 'Graphic Design', 'Digital Content', 'Infographic', 'Youth Education', 'Health Awareness'],
+    bullets: [
+      'Developed digital educational content related to adolescent health and nutrition awareness.',
+      'Designed infographic campaigns distributed through social media platforms.',
+      'Promoted positive lifestyle awareness and anemia prevention among youth audiences.',
+      'Collaborated on content strategy aligned with BKKBN national youth health programs.'
+    ],
+    background: 'Kurangnya media edukasi kesehatan remaja yang menarik dan mudah dipahami menjadi hambatan dalam kampanye kesadaran nutrisi dan pencegahan anemia di kalangan pelajar Indonesia.',
+    solution: 'Merancang konten infografis edukatif digital menggunakan Canva dengan pendekatan visual storytelling yang ramah remaja, didistribusikan melalui kanal media sosial dalam rangka program BINAR (Bintangku Bersinar) untuk meningkatkan literasi kesehatan.',
+    githubUrl: 'https://github.com/MIqbalZafarullah'
+  },
+  {
+    id: 12,
     title: "Spider-Man: GF of Chaos — 2D Game",
     category: 'Game Dev',
     filterCategory: 'Security & Systems',
