@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FAF9F5;
+    color: #18181B;
+  }
+
+  /* Notebook Lined Paper Pattern */
+  .bg-notebook-paper {
+    background-color: #FAF9F5;
+    background-image: linear-gradient(#E8E6DF 1px, transparent 1px);
+    background-size: 100% 32px;
+  }
+}
+
+/* Custom Scrollbar styled for paper theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F3EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D2C9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B5AA;
+}
+
+/* Washi Tape / Sticky Tape Effect */
+.washi-tape {
+  position: absolute;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 2px dashed rgba(0, 0, 0, 0.15);
+  border-right: 2px dashed rgba(0, 0, 0, 0.15);
+  z-index: 20;
+}
+
+.tape-blue {
+  background: rgba(147, 197, 253, 0.65);
+}
+
+.tape-yellow {
+  background: rgba(254, 240, 138, 0.7);
+}
+
+.tape-pink {
+  background: rgba(244, 114, 182, 0.65);
+}
+
+/* Folder Cut Tab Shape */
+.folder-tab-shape {
+  clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 100%, 0 100%);
+}
+
+/* Hand-drawn box border */
+.doodle-border {
+  border: 2px solid #E11D48;
+  border-radius: 8px 12px 6px 14px;
+}
+
+/* Highlighter Badge effect */
+.highlighter-yellow {
+  background-color: #FEF08A;
+  color: #854D0E;
+}
+.highlighter-green {
+  background-color: #BBF7D0;
+  color: #166534;
+}
+.highlighter-pink {
+  background-color: #FBCFE8;
+  color: #9D174D;
+}
+.highlighter-blue {
+  background-color: #BFDBFE;
+  color: #1E40AF;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
