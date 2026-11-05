@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Briefcase, Award, ChevronRight, Building2, Calendar, MapPin } from 'lucide-react';
 import { workData, orgData } from '../data/experiences';
 import { ExperienceDetailModal } from '../components/modals/ExperienceDetailModal';
+import { OrgLogo } from '../components/ui/OrgLogo';
 
 export const ExperienceView = () => {
   const [selectedExp, setSelectedExp] = useState(null);
@@ -50,16 +51,7 @@ export const ExperienceView = () => {
                 {/* Card Header */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-black/10 pb-4 mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-gray-50 border border-black/15 p-1 flex items-center justify-center overflow-hidden shrink-0">
-                      <img
-                        src={item.logo}
-                        alt={item.org}
-                        className="w-full h-full object-contain"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                        }}
-                      />
-                    </div>
+                    <OrgLogo src={item.logo} alt={item.org} className="w-11 h-11" iconSize={20} />
                     <div>
                       <a
                         href={item.orgLink}
@@ -136,9 +128,7 @@ export const ExperienceView = () => {
                 {/* Org Header Bar */}
                 <div className="bg-[#FAF9F5] border-b-2 border-black/15 px-6 py-4 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-white border border-black/10 p-0.5 flex items-center justify-center shrink-0">
-                      <img src={item.logo} alt={item.orgName} className="w-full h-full object-contain" />
-                    </div>
+                    <OrgLogo src={item.logo} alt={item.orgName} className="w-9 h-9" iconSize={16} />
                     <a
                       href={item.orgLink}
                       target="_blank"

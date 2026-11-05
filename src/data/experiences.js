@@ -86,48 +86,6 @@ export const workData = [
     ],
     skills: ['Public Speaking', 'Mentoring', 'Nutrition Education', 'Youth Advocacy'],
     photo: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800'
-  },
-  {
-    id: 13,
-    type: 'org',
-    orgName: 'Engineering Research Community (ERCOM) – Universitas Bengkulu',
-    orgLink: 'https://unib.ac.id/',
-    logo: 'https://upload.wikimedia.org/wikipedia/id/thumb/2/29/Logo_Universitas_Bengkulu.png/220px-Logo_Universitas_Bengkulu.png',
-    roles: [
-      {
-        title: 'Communication & Information Division Member',
-        date: '2025 – 2026',
-        desc: 'Supported organizational communication by designing promotional flyers and managing social media content to increase engagement and visibility of ERCOM programs and activities.',
-        bullets: [
-          'Designed promotional flyers and visual content for ERCOM programs and events',
-          'Managed social media content to increase community engagement and visibility',
-          'Coordinated information dissemination across ERCOM internal channels'
-        ],
-        responsibilities: [
-          'Created visual communication assets for ERCOM activities.',
-          'Managed and published social media content across platforms.',
-          'Coordinated with other divisions for event promotion materials.'
-        ],
-        skills: ['Graphic Design', 'Social Media Management', 'Content Creation', 'Communication'],
-        photo: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800'
-      },
-      {
-        title: 'Member – Interdisciplinary Research & Technology Development (RIPI)',
-        date: '2026 – Present',
-        desc: 'Participated in collaborative research initiatives focused on interdisciplinary technology development and innovation within the research community.',
-        bullets: [
-          'Participated in interdisciplinary research projects on technology development and innovation',
-          'Collaborated with multi-disciplinary teams on research design and implementation',
-          'Contributed to research documentation and knowledge sharing within ERCOM'
-        ],
-        responsibilities: [
-          'Contributed to interdisciplinary technology research projects.',
-          'Collaborated on research documentation and presentation.'
-        ],
-        skills: ['Research', 'Technology Development', 'Collaboration', 'Innovation'],
-        photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800'
-      }
-    ]
   }
 ];
 

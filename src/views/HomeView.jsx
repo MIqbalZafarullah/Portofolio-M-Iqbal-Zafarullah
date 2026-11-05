@@ -69,7 +69,7 @@ export const HomeView = ({ onOpenCV, onOpenContact }) => {
 
         {/* Punchline Statement */}
         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight text-gray-900 mt-6 mb-8 max-w-3xl mx-auto leading-tight font-sans">
-          I design software that <span className="inline-block px-2 bg-emerald-100 text-emerald-800 rounded border border-emerald-300">🎯 gets out</span> of your way. 🌸
+          I design software that <span className="inline-block px-2 bg-emerald-100 text-emerald-800 rounded border border-emerald-300">🎯 gets out</span> of your way. 🌻
         </h2>
 
         {/* CTA Buttons */}

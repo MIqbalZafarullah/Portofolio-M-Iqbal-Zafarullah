@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, Building2, Settings, ExternalLink } from 'lucide-react';
+import { OrgLogo } from '../ui/OrgLogo';
 
 export const ExperienceDetailModal = ({ exp, isOpen, onClose }) => {
   if (!isOpen || !exp) return null;
@@ -16,9 +17,7 @@ export const ExperienceDetailModal = ({ exp, isOpen, onClose }) => {
         {/* Modal Header */}
         <div className="flex justify-between items-center p-6 border-b border-black/10 bg-white">
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-xl bg-gray-50 border border-black/15 p-1.5 flex items-center justify-center overflow-hidden shrink-0">
-              <img src={exp.logo} alt="org logo" className="w-full h-full object-contain" />
-            </div>
+            <OrgLogo src={exp.logo} alt={exp.org || exp.orgName} className="w-12 h-12" iconSize={22} />
             <div>
               <span className="font-mono text-[10px] uppercase font-bold text-gray-500 tracking-wider">
                 DOCUMENT FILE: {exp.org || exp.orgName}
