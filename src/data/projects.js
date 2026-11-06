@@ -13,10 +13,9 @@ export const projectsData = [
     category: 'AI & Web',
     filterCategory: 'AI & Web',
     date: 'Oct 2025',
-    tech: 'Web Dev · AI Integration',
-    desc: 'Platform web pembelajaran untuk melatih kemampuan penalaran kritis dan argumentasi lisan berbantuan AI dengan arena debat terstruktur.',
-    // 💡 Tips: Simpan file screenshot di folder public/projects/ lalu ganti path di bawah ini
-    gallery: ['https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1000'],
+    tech: 'Web Dev · AI Integration · NLP',
+    desc: 'Platform web pembelajaran untuk melatih kemampuan penalaran kritis dan argumentasi lisan berbantuan AI dengan arena debat terstruktur ("Latihan berpendapat yang tidak bisa dicontek AI").',
+    gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/spinsight-critical-reasoning.png'],
     techList: ['AI Integration', 'Web Development', 'NLP', 'Debate Arena', 'EdTech', 'Interactive UI'],
     bullets: [
       'Developed a web platform for practicing critical reasoning and oral argumentation through AI-assisted learning.',
@@ -26,18 +25,19 @@ export const projectsData = [
     ],
     background: 'Meningkatkan kemampuan berpikir kritis dan argumentasi terstruktur di era informasi seringkali terkendala oleh terbatasnya evaluasi personal yang mendalam di ruang kelas konvensional.',
     solution: 'Membangun platform berbasis web yang memanfaatkan AI untuk menganalisis struktur argumen siswa, memberikan skor dan feedback secara real-time, serta menyediakan arena debat interaktif dan dasbor pemantauan kemajuan untuk pengajar.',
+    liveUrl: 'https://spinsight.onrender.com/',
     githubUrl: 'https://github.com/MIqbalZafarullah'
   },
   {
     id: 2,
-    title: "KeraHub – Circular Economy Platform",
+    title: "KeraHub (KERALOOP) – Circular Economy Platform",
     category: 'Web Dev',
     filterCategory: 'Web Development',
     date: 'Sep 2025',
-    tech: 'Web Dev · Marketplace · Traceability',
-    desc: 'Platform ekonomi sirkular digital yang menghubungkan pemilik salon, mitra logistik, fasilitas pengolahan, dan petani untuk daur ulang limbah rambut.',
-    gallery: ['https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=1000'],
-    techList: ['Web Development', 'Traceability', 'Marketplace', 'Circular Economy', 'Logistics Coordination', 'GreenTech'],
+    tech: 'Web Dev · Circular Node · Marketplace · Traceability',
+    desc: 'Platform ekonomi sirkular digital biomaterial berbasis Big Data yang mengintegrasikan limbah keratin rambut salon, logistik cerdas, dan media tanam ramah lingkungan untuk pertanian perkotaan berkelanjutan.',
+    gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/kerahub-circular-economy.jpg'],
+    techList: ['Web Development', 'Biomaterial Platform', 'Traceability', 'Marketplace', 'Circular Economy', 'Logistics Coordination', 'GreenTech'],
     bullets: [
       'Developed a digital platform connecting salon owners, logistics providers, processing facilities, and farmers.',
       'Designed a digital scheduling system for waste collection and logistics coordination.',
@@ -46,7 +46,8 @@ export const projectsData = [
     ],
     background: 'Limbah rambut dari industri salon kecantikan kerap mencemari lingkungan tanpa pengelolaan yang tepat, padahal memiliki kandungan organik bernilai ekonomi tinggi untuk sektor pertanian.',
     solution: 'Mengembangkan platform web terintegrasi dengan modul penjadwalan penjemputan limbah, pelacakan rantai pasok transparan (traceability), marketplace produk pupuk/turunan rambut, dan sistem insentif digital.',
-    githubUrl: 'https://github.com/MIqbalZafarullah'
+    liveUrl: 'https://apanzagg.github.io/KeraHub/',
+    githubUrl: 'https://github.com/apanzagg/KeraHub'
   },
   {
     id: 3,
@@ -54,10 +55,10 @@ export const projectsData = [
     category: 'AI & Web',
     filterCategory: 'AI & Web',
     date: 'Sep 2025',
-    tech: 'AI · Computer Vision · Web Dev',
-    desc: 'Platform komunikasi dan pembelajaran inklusif dengan kamus digital BISINDO, speech-to-text, dan penerjemah bahasa isyarat berbasis Computer Vision.',
-    gallery: ['https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000'],
-    techList: ['AI & Machine Learning', 'Computer Vision', 'Speech-to-Text', 'Sign-to-Text', 'BISINDO', 'Web Accessibility'],
+    tech: 'AI · Computer Vision · BISINDO · Web Accessibility',
+    desc: 'Platform komunikasi dan pembelajaran inklusif dengan kamus digital BISINDO, speech-to-text, Sign Academy, dan penerjemah bahasa isyarat berbasis Computer Vision.',
+    gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/signary-inclusive-platform.jpg'],
+    techList: ['AI & Machine Learning', 'Computer Vision', 'Speech-to-Text', 'Sign-to-Text', 'BISINDO', 'Sign Academy', 'Web Accessibility'],
     bullets: [
       'Developed an inclusive web platform featuring a BISINDO dictionary, community, and discussion forum.',
       'Implemented speech-to-text and sign-to-text functionalities to support accessible communication.',
@@ -66,7 +67,8 @@ export const projectsData = [
     ],
     background: 'Keterbatasan akses media komunikasi inklusif sering menghambat interaksi sehari-hari antara penyandang disabilitas rungu (tuli) dan masyarakat umum.',
     solution: 'Membangun aplikasi web inklusif yang memanfaatkan Computer Vision dan model AI untuk penerjemahan bahasa isyarat secara real-time, dilengkapi konversi suara-ke-teks, kamus interaktif BISINDO, dan forum komunitas suportif.',
-    githubUrl: 'https://github.com/MIqbalZafarullah'
+    liveUrl: 'https://miqbalzafarullah.github.io/SIGNARY/',
+    githubUrl: 'https://github.com/MIqbalZafarullah/SIGNARY'
   },
   {
     id: 4,
@@ -75,9 +77,9 @@ export const projectsData = [
     filterCategory: 'AI & Web',
     date: 'Jul 2025',
     tech: 'FastAPI · React.js · PostgreSQL · AI',
-    desc: 'Platform intelijen distribusi pangan B2B2G dengan integrasi WhatsApp Business API, peramalan pasokan AI, dan dasbor Early Warning System.',
-    gallery: ['https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000'],
-    techList: ['FastAPI', 'React.js', 'PostgreSQL', 'AI Forecasting', 'WhatsApp Business API', 'Early Warning System'],
+    desc: 'Platform teknologi hijau koordinasi distribusi hortikultura dengan muatan balik yang menghubungkan laporan panen petani, permintaan distributor, dan kapasitas armada di koridor Rejang Lebong-Kota Bengkulu.',
+    gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/pangandali-distribution.jpg'],
+    techList: ['FastAPI', 'React.js', 'PostgreSQL', 'AI Forecasting', 'WhatsApp Business API', 'Early Warning System', 'Smart Logistics'],
     bullets: [
       'Developed a B2B2G platform connecting farmers, distributors, logistics partners, and local government for food distribution coordination.',
       'Integrated WhatsApp Business API for harvest reporting and automated data acquisition.',
@@ -86,6 +88,7 @@ export const projectsData = [
     ],
     background: 'Asimetri informasi rantai pasok pangan dan lambatnya pelaporan panen di tingkat petani kerap memicu kelangkaan serta gejolak inflasi harga pangan di daerah.',
     solution: 'Mengembangkan ekosistem digital B2B2G: pelaporan hasil panen petani otomatis via WhatsApp bot, analisis dan prediksi suplai berbantuan AI, pencocokan rute logistik cerdas, serta Early Warning System untuk pemangku kebijakan.',
+    liveUrl: 'https://pangandali.vercel.app/',
     githubUrl: 'https://github.com/MIqbalZafarullah'
   },
   {
@@ -94,29 +97,30 @@ export const projectsData = [
     category: 'Security',
     filterCategory: 'Security & Systems',
     date: 'Jun 2025',
-    tech: 'Python · AES-CBC · Cryptography',
-    desc: 'Sistem pengamanan data finansial pribadi berbasis algoritma Advanced Encryption Standard (AES) mode Cipher Block Chaining (CBC) dengan Python.',
-    gallery: ['https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1000'],
-    techList: ['Python', 'AES-256', 'Cipher Block Chaining (CBC)', 'Cryptography', 'Data Confidentiality', 'Data Security'],
+    tech: 'AES-256-GCM · PBKDF2 · Web Crypto · Cryptography',
+    desc: 'Sistem pengamanan data finansial pertanian dan transaksi terenkripsi berbasis algoritma Advanced Encryption Standard (AES-256-GCM) dengan PBKDF2 dan arsitektur Secure Vault V2.',
+    gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/agrisave-crypto-vault.png'],
+    techList: ['AES-256-GCM', 'PBKDF2', 'Web Crypto API', 'Cryptography', 'Data Confidentiality', 'Secure Vault'],
     bullets: [
-      'Implemented the Advanced Encryption Standard (AES) algorithm using Cipher Block Chaining (CBC) mode.',
-      'Developed a Python-based encryption system to protect personal financial records.',
+      'Implemented the Advanced Encryption Standard (AES) algorithm using AES-256-GCM with PBKDF2 key derivation.',
+      'Developed a secure web-based encryption vault system to protect financial and agricultural transaction records.',
       'Applied cryptographic techniques to enhance data confidentiality and secure financial information.'
     ],
     background: 'Kerahasiaan catatan transaksi dan data keuangan pribadi sangat rentan terhadap pencurian jika disimpan tanpa enkripsi kriptografi yang kokoh.',
-    solution: 'Mengimplementasikan sistem enkripsi/dekripsi Python menggunakan AES-CBC dengan padding PKCS#7 dan initial vector (IV) dinamis guna menjamin kerahasiaan (*confidentiality*) dan integritas data finansial.',
-    githubUrl: 'https://github.com/MIqbalZafarullah'
+    solution: 'Mengimplementasikan sistem enkripsi/dekripsi web menggunakan AES-256-GCM dan PBKDF2 guna menjamin kerahasiaan (*confidentiality*), integritas, dan autentikasi data finansial dalam Secure Vault V2.',
+    liveUrl: 'https://miqbalzafarullah.github.io/AgriSave_Kriptografi/',
+    githubUrl: 'https://github.com/MIqbalZafarullah/AgriSave_Kriptografi'
   },
   {
     id: 6,
-    title: "KibokGO – UNIB Shortest Path",
+    title: "KibokGO – UNIB Shortest Path Navigation",
     category: 'Web Dev',
     filterCategory: 'Web Development',
     date: 'May 2025',
-    tech: 'JavaScript · Leaflet.js · OpenStreetMap',
-    desc: 'Sistem navigasi kampus berbasis web untuk mencari rute jalan kaki terpendek dan jalur alternatif di lingkungan Universitas Bengkulu menggunakan algoritma Dijkstra.',
-    gallery: ['https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000'],
-    techList: ['JavaScript', 'Dijkstra Algorithm', 'Leaflet.js', 'OpenStreetMap', 'Graph Theory', 'Spatial Navigation'],
+    tech: 'JavaScript · Dijkstra Algorithm · Leaflet.js · OpenStreetMap',
+    desc: 'Sistem navigasi kampus AI-Powered berbasis web untuk mencari rute jalan kaki, motor, dan mobil terpendek di lingkungan Universitas Bengkulu menggunakan algoritma Dijkstra.',
+    gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/kibokgo-shortest-path.jpg'],
+    techList: ['JavaScript', 'Dijkstra Algorithm', 'Leaflet.js', 'OpenStreetMap', 'Graph Theory', 'Spatial Navigation', 'Multi-mode Route'],
     bullets: [
       'Developed a web-based navigation system to find the shortest walking routes between locations within Universitas Bengkulu.',
       'Implemented Dijkstra\'s algorithm to calculate optimal paths and alternative routes (detours).',
@@ -125,7 +129,8 @@ export const projectsData = [
     ],
     background: 'Luasnya area kampus Universitas Bengkulu dengan puluhan gedung perkuliahan dan percabangan jalan seringkali menyulitkan civitas akademika dalam menemukan rute pejalan kaki paling efisien.',
     solution: 'Membangun peta interaktif berbasis Leaflet.js dan OpenStreetMap yang memetakan jalur kampus ke dalam representasi graf berbobot, menerapkan algoritma Dijkstra untuk kalkulasi rute terpendek dan rute alternatif (detour).',
-    githubUrl: 'https://github.com/MIqbalZafarullah'
+    liveUrl: 'https://miqbalzafarullah.github.io/KibokGO-UNIB-ShortestPath/',
+    githubUrl: 'https://github.com/MIqbalZafarullah/KibokGO-UNIB-ShortestPath'
   },
   {
     id: 7,
@@ -201,22 +206,23 @@ export const projectsData = [
   },
   {
     id: 11,
-    title: "BINAR – Youth Health Education Initiative",
+    title: "BINAR (Bintangku Bersinar) – Youth Health Education Initiative",
     category: 'UI/UX Design',
     filterCategory: 'UI/UX Design',
     date: 'Jan 2024',
-    tech: 'Canva · Digital Content · Infographic Design',
-    desc: 'Inisiatif konten edukasi kesehatan remaja digital yang mempromosikan kesadaran nutrisi, pencegahan anemia, dan gaya hidup sehat melalui media sosial.',
-    gallery: ['https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?q=80&w=1000'],
-    techList: ['Canva', 'Graphic Design', 'Digital Content', 'Infographic', 'Youth Education', 'Health Awareness'],
+    tech: 'Canva · Digital Content · Infographic Design · Instagram Campaign',
+    desc: 'Inisiatif konten edukasi kesehatan remaja digital yang mempromosikan kesadaran nutrisi, pencegahan anemia, dan gaya hidup sehat melalui kanal Instagram @page.binar.',
+    gallery: ['/Portofolio-M-Iqbal-Zafarullah/projects/binar-youth-education.png'],
+    techList: ['Canva', 'Graphic Design', 'Digital Content', 'Infographic', 'Youth Education', 'Instagram Platform'],
     bullets: [
       'Developed digital educational content related to adolescent health and nutrition awareness.',
-      'Designed infographic campaigns distributed through social media platforms.',
+      'Designed infographic campaigns distributed through social media platforms (@page.binar).',
       'Promoted positive lifestyle awareness and anemia prevention among youth audiences.',
       'Collaborated on content strategy aligned with BKKBN national youth health programs.'
     ],
     background: 'Kurangnya media edukasi kesehatan remaja yang menarik dan mudah dipahami menjadi hambatan dalam kampanye kesadaran nutrisi dan pencegahan anemia di kalangan pelajar Indonesia.',
     solution: 'Merancang konten infografis edukatif digital menggunakan Canva dengan pendekatan visual storytelling yang ramah remaja, didistribusikan melalui kanal media sosial dalam rangka program BINAR (Bintangku Bersinar) untuk meningkatkan literasi kesehatan.',
+    liveUrl: 'https://www.instagram.com/page.binar?rpxt=ZngxanVyeGdiMWFv',
     githubUrl: 'https://github.com/MIqbalZafarullah'
   },
   {

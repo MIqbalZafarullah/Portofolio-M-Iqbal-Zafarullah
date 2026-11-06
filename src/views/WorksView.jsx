@@ -130,6 +130,18 @@ export const WorksView = () => {
                             {isExpanded ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
                           </button>
 
+                          {project.liveUrl && (
+                            <a
+                              href={project.liveUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="px-3 py-1.5 bg-[#4ADE80] hover:bg-[#22c55e] text-black font-mono text-xs font-black rounded-lg shadow-[2px_2px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all flex items-center gap-1.5"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              <ExternalLink size={12} /> Live Demo ↗
+                            </a>
+                          )}
+
                           <a
                             href={project.githubUrl}
                             target="_blank"

@@ -502,22 +502,22 @@ export const awardData = [
   },
   {
     id: 106,
-    title: 'Graduate – Samsung Innovation Campus',
-    issuer: 'Samsung',
+    title: 'Lolos Seleksi Nasional – Samsung Innovation Campus Batch 8',
+    issuer: 'Samsung x Universitas Bengkulu',
     year: '2026',
     category: 'Program',
-    desc: 'Successfully completed the Samsung Innovation Campus 2026 program, gaining knowledge and practical experience in technology and digital innovation.',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800',
-    link: '#'
+    desc: 'Dinyatakan lolos seleksi Samsung Innovation Campus Batch 8 - 2026/2027 di Tingkat Nasional sebagai anggota Tim Universitas Bengkulu di bawah bimbingan dosen Teknik Elektro UNIB.',
+    image: '/Portofolio-M-Iqbal-Zafarullah/certificates/award_samsung_innovation_campus_batch8_2026.jpg',
+    link: 'https://te.unib.ac.id/'
   },
   {
     id: 107,
-    title: 'Bank Indonesia Scholarship Awardee (GenBI)',
-    issuer: 'Bank Indonesia',
+    title: 'Penerima Beasiswa Bank Indonesia (GenBI) 2026',
+    issuer: 'Bank Indonesia & UKM ERCOM UNIB',
     year: '2026',
     category: 'Beasiswa',
-    desc: 'Selected as a scholarship recipient based on academic excellence, leadership potential, and community engagement.',
-    image: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=800',
+    desc: 'Garda Berprestasi: Penerima Beasiswa Program Pendidikan Kebanksentralan Bank Indonesia Tahun 2026, aktif berkontribusi sebagai Staff RIPI UKM ERCOM FT UNIB.',
+    image: '/Portofolio-M-Iqbal-Zafarullah/certificates/award_beasiswa_bank_indonesia_genbi_2026.jpg',
     link: 'https://genbi.id/'
   },
   {
@@ -532,12 +532,12 @@ export const awardData = [
   },
   {
     id: 112,
-    title: '1st Place – Popular Article Competition, Bank Indonesia (Sumatra Region)',
+    title: '1st Place (Juara 1) – Artikel Terbaik Bank Indonesia Leadership Camp 2026 (Wilayah Sumatera)',
     issuer: 'Bank Indonesia',
     year: '2026',
     category: 'Kompetisi',
-    desc: 'Won 1st Place in a national-scale popular article competition representing the Sumatra region, organized by Bank Indonesia, demonstrating strong writing skills and the ability to present insightful ideas through engaging articles.',
-    image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800',
+    desc: 'Meraih Juara 1 Kategori Artikel Terbaik pada program Leadership Camp 2026 Wilayah Sumatera yang diselenggarakan oleh Bank Indonesia.',
+    image: '/Portofolio-M-Iqbal-Zafarullah/certificates/award_juara1_artikel_terbaik_bi_leadership_camp_2026.jpg',
     link: '#'
   },
   {
@@ -588,6 +588,16 @@ export const awardData = [
     category: 'Duta',
     desc: 'Dianugerahi Piagam Penghargaan atas prestasinya sebagai Duta GenRe Putra 1 Kabupaten Seluma Tahun 2023 oleh DP3APPKB dan Forum GenRe Kabupaten Seluma (Nomor: 800/169/DP3APPKB/XI/23).',
     image: '/Portofolio-M-Iqbal-Zafarullah/certificates/award_08_genre_seluma_duta_putra1_2023.jpg',
+    link: '#'
+  },
+  {
+    id: 120,
+    title: 'Top 12 Finalist – Duta GenRe Putra Provinsi Bengkulu 2024',
+    issuer: 'Kemendukbangga/BKKBN Provinsi Bengkulu',
+    year: '2024',
+    category: 'Duta',
+    desc: 'Terpilih sebagai Top 12 Finalis Duta GenRe Putra Tingkat Provinsi Bengkulu 2024 mewakili Kabupaten Seluma dalam advokasi Triad KRR, generasi berencana, dan pencegahan stunting.',
+    image: '/Portofolio-M-Iqbal-Zafarullah/certificates/award_top12_duta_genre_provinsi_bengkulu_2024.jpg',
     link: '#'
   },
   {

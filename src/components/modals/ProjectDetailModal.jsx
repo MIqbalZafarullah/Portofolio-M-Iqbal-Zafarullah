@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight, Code, Zap, CheckCircle2 } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Code, Zap, CheckCircle2, ExternalLink, Github } from 'lucide-react';
 
 export const ProjectDetailModal = ({ project, isOpen, onClose }) => {
   const [currentImg, setCurrentImg] = useState(0);
@@ -89,6 +89,32 @@ export const ProjectDetailModal = ({ project, isOpen, onClose }) => {
 
           {/* Right: Details & Bullets */}
           <div className="lg:w-1/2 space-y-6 font-sans">
+            {/* Live Demo & GitHub Buttons */}
+            {(project.liveUrl || project.githubUrl) && (
+              <div className="flex flex-wrap items-center gap-3 pb-1">
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-4 py-2 bg-[#4ADE80] hover:bg-[#22c55e] text-black font-mono text-xs font-black rounded-xl border-2 border-black shadow-[3px_3px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all flex items-center gap-2"
+                  >
+                    <ExternalLink size={15} /> Buka Live Demo / Web ↗
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-4 py-2 bg-white hover:bg-gray-100 text-black font-mono text-xs font-bold rounded-xl border-2 border-black shadow-[3px_3px_0px_#000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all flex items-center gap-2"
+                  >
+                    <Github size={15} /> Repositori GitHub ↗
+                  </a>
+                )}
+              </div>
+            )}
+
             {project.date && (
               <span className="font-mono text-xs font-bold text-gray-700 bg-[#FEF08A] border border-black/30 px-3 py-1 rounded-md inline-block">
                 {project.date}
