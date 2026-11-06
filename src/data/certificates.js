@@ -487,7 +487,7 @@ export const awardData = [
     year: '2026',
     category: 'Kompetisi',
     desc: 'Received Harapan 3 (3rd Honorable Mention) in Essay Competition Instinct X, Faculty of Economics and Business, Universitas Riau, tema "Optimalisasi Peran Generasi Muda dalam Transformasi Ekonomi Digital Menuju Masa Depan Berkelanjutan." Pekanbaru, 3 Oktober 2026 (No: 045/SRTF/F2/INSTINCTX/LPIIFEB-UNRI/KE/IX/2026).',
-    image: '/Portofolio-M-Iqbal-Zafarullah/certificates/award_05_instinct_x_essay_harapan3_2026.jpg',
+    image: '/Portofolio-M-Iqbal-Zafarullah/certificates/award_instinct_x_essay_harapan3_2026.jpg',
     link: '#'
   },
   {
@@ -577,7 +577,7 @@ export const awardData = [
     year: '2025',
     category: 'Kompetisi',
     desc: 'Awarded 3rd Place (Juara 3) Lomba Infografis Apresiasi Duta GenRe Provinsi Bengkulu 2025 oleh Kemendukbangga/BKKBN Provinsi Bengkulu (No: 29-59/B/panpel-ADUJAK/VIII/FGPB/2025).',
-    image: '/Portofolio-M-Iqbal-Zafarullah/certificates/award_06_genre_bengkulu_infografis_juara3_2025.jpg',
+    image: '/Portofolio-M-Iqbal-Zafarullah/certificates/award_05_genre_bengkulu_infografis_juara3_2025.jpg',
     link: '#'
   },
   {
