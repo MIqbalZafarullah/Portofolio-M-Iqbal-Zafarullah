@@ -84,7 +84,7 @@ export const WorksView = () => {
                   <div className="flex items-end">
                     <div
                       onClick={() => toggleExpand(project.id)}
-                      className={`cursor-pointer px-5 py-2 ${theme.tabBg} text-white font-mono text-xs font-bold uppercase tracking-widest rounded-t-xl folder-tab-shape shadow-sm hover:brightness-110 transition-all flex items-center gap-2 select-none`}
+                      className={`cursor-pointer px-5 py-2 ${theme.tabBg} text-white font-mono text-xs font-bold uppercase tracking-widest rounded-t-xl folder-tab-shape shadow-sm hover:brightness-110 transition-all flex items-center gap-2 select-none border-t border-l border-white/30`}
                       style={{ minWidth: '160px' }}
                     >
                       <span>{isExpanded ? '▼' : '+'}</span>
@@ -97,7 +97,7 @@ export const WorksView = () => {
 
                   {/* 2. MAIN FOLDER BODY */}
                   <div
-                    className={`${theme.bg} ${theme.text} rounded-b-2xl rounded-tr-2xl p-5 sm:p-6 shadow-folder transition-all duration-500 border border-black/10`}
+                    className={`${theme.bg} ${theme.text} rounded-b-2xl rounded-tr-2xl p-5 sm:p-6 shadow-folder transition-all duration-500 border border-black/10 glass-sheen`}
                   >
                     <div className={`flex ${isExpanded ? 'flex-col lg:flex-row' : 'flex-col sm:flex-row'} items-start justify-between gap-5`}>
                       

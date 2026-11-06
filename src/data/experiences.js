@@ -85,7 +85,7 @@ export const workData = [
       'Organized Bengkulu youth discussion forums.'
     ],
     skills: ['Public Speaking', 'Mentoring', 'Nutrition Education', 'Youth Advocacy'],
-    photo: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800'
+    photo: '/Portofolio-M-Iqbal-Zafarullah/certificates/01_bkkbn_workshop_gizi_anemia_2024.jpg'
   }
 ];
 

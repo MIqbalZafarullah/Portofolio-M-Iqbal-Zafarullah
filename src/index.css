@@ -35,28 +35,101 @@
   background: #B8B5AA;
 }
 
-/* Washi Tape / Sticky Tape Effect */
+/* Washi Tape / Frosted Glass Tape Effect */
 .washi-tape {
   position: absolute;
-  height: 22px;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(2px);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  border-left: 2px dashed rgba(0, 0, 0, 0.15);
-  border-right: 2px dashed rgba(0, 0, 0, 0.15);
+  height: 24px;
+  backdrop-filter: blur(6px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  border-left: 2px dashed rgba(0, 0, 0, 0.2);
+  border-right: 2px dashed rgba(0, 0, 0, 0.2);
+  box-shadow: 
+    0 2px 6px rgba(0, 0, 0, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.85);
   z-index: 20;
 }
 
 .tape-blue {
   background: rgba(147, 197, 253, 0.65);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .tape-yellow {
   background: rgba(254, 240, 138, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 .tape-pink {
   background: rgba(244, 114, 182, 0.65);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* ===== LIQUID GLASS & FROSTED ACRYLIC UTILITIES ===== */
+.liquid-glass-island {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(20px) saturate(190%);
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 
+    0 10px 30px -5px rgba(0, 0, 0, 0.07),
+    0 4px 12px -2px rgba(0, 0, 0, 0.03),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.liquid-glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 
+    0 12px 36px -6px rgba(0, 0, 0, 0.06),
+    0 4px 12px -2px rgba(0, 0, 0, 0.03),
+    inset 0 1px 2px 0 rgba(255, 255, 255, 1);
+}
+
+/* Glass Sheen Hover Effect */
+.glass-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-sheen::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 65%
+  );
+  transform: rotate(25deg) translateY(-100%);
+  transition: transform 0.85s ease;
+  pointer-events: none;
+}
+
+.glass-sheen:hover::after {
+  transform: rotate(25deg) translateY(100%);
+}
+
+/* Translucent Glass Sticker Pills */
+.glass-sticker {
+  backdrop-filter: blur(8px) saturate(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(160%);
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.06),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-sticker:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 
+    0 6px 16px rgba(0, 0, 0, 0.09),
+    inset 0 1px 2px rgba(255, 255, 255, 1);
 }
 
 /* Folder Cut Tab Shape */

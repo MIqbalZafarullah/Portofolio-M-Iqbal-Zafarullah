@@ -25,8 +25,10 @@ export const CustomCursor = () => {
       </div>
       <div ref={glowRef} className="absolute" style={{ transform: 'translate(-100px, -100px)' }}>
         <div
-          className={`w-8 h-8 rounded-full border-2 border-black/40 transition-all duration-200 ease-out flex items-center justify-center ${
-            isHovering ? 'scale-150 bg-yellow-300/40 border-black' : 'scale-100'
+          className={`w-8 h-8 rounded-full border-2 border-black/30 backdrop-blur-[1px] transition-all duration-300 ease-out flex items-center justify-center ${
+            isHovering
+              ? 'scale-175 bg-yellow-300/40 border-black shadow-[0_0_20px_rgba(250,204,21,0.45)]'
+              : 'scale-100 bg-white/20'
           }`}
         />
       </div>

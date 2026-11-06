@@ -26,7 +26,7 @@ export const HomeView = ({ onOpenCV, onOpenContact }) => {
         {/* Floating Mini Photo Circles (Left & Right) */}
         <div className="relative inline-block my-2">
           {/* Left Mini Avatar */}
-          <div className="hidden sm:block absolute -left-16 lg:-left-24 top-6 w-14 h-14 lg:w-16 lg:h-16 rounded-full border-2 border-orange-400 p-0.5 shadow-md bg-white -rotate-6 hover:rotate-0 transition-transform">
+          <div className="hidden sm:block absolute -left-16 lg:-left-24 top-6 w-14 h-14 lg:w-16 lg:h-16 rounded-full border-2 border-orange-400 p-0.5 shadow-[0_4px_14px_rgba(251,146,60,0.35)] bg-white/90 backdrop-blur-sm -rotate-6 hover:rotate-0 hover:scale-105 transition-all">
             <img
               src={profileData.profilePhoto}
               alt="Iqbal"
@@ -35,14 +35,14 @@ export const HomeView = ({ onOpenCV, onOpenContact }) => {
           </div>
 
           {/* Center Pixel Name Box */}
-          <div className="relative inline-block border-2 border-[#E11D48] bg-white/70 backdrop-blur-sm rounded-xl px-6 sm:px-12 py-3 shadow-[4px_4px_0px_#E11D48] transition-transform hover:scale-[1.02]">
+          <div className="relative inline-block border-2 border-[#E11D48] bg-white/85 backdrop-blur-md rounded-2xl px-6 sm:px-12 py-3 shadow-[5px_5px_0px_#E11D48] transition-all hover:scale-[1.02] glass-sheen">
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black font-pixel tracking-widest text-[#18181B] uppercase select-none">
               IQBAL
             </h1>
           </div>
 
           {/* Right Mini Avatar - GenBI photo */}
-          <div className="hidden sm:block absolute -right-16 lg:-right-24 top-6 w-14 h-14 lg:w-16 lg:h-16 rounded-full border-2 border-orange-400 p-0.5 shadow-md bg-white rotate-6 hover:rotate-0 transition-transform">
+          <div className="hidden sm:block absolute -right-16 lg:-right-24 top-6 w-14 h-14 lg:w-16 lg:h-16 rounded-full border-2 border-orange-400 p-0.5 shadow-[0_4px_14px_rgba(251,146,60,0.35)] bg-white/90 backdrop-blur-sm rotate-6 hover:rotate-0 hover:scale-105 transition-all">
             <img
               src="/Portofolio-M-Iqbal-Zafarullah/iqbal-genbi.jpg"
               alt="Iqbal - GenBI"
@@ -106,11 +106,11 @@ export const HomeView = ({ onOpenCV, onOpenContact }) => {
 
       {/* ===== "WHAT'S UP" / NOTEBOOK SKETCH SECTION ===== */}
       <section className="relative max-w-4xl mx-auto px-4 sm:px-6 my-16 w-full">
-        <div className="relative bg-white/90 border-2 border-black/15 rounded-3xl p-6 sm:p-12 shadow-paper">
+        <div className="relative liquid-glass-card border-2 border-black/15 rounded-3xl p-6 sm:p-12 shadow-[0_16px_40px_-10px_rgba(0,0,0,0.06)]">
           
           {/* Section Header Pin */}
           <div className="flex justify-center -mt-10 sm:-mt-16 mb-8">
-            <span className="bg-white border-2 border-black px-6 py-1.5 rounded-lg font-mono text-xs font-bold uppercase tracking-widest shadow-[3px_3px_0px_#000000]">
+            <span className="bg-white/90 backdrop-blur-md border-2 border-black px-6 py-1.5 rounded-lg font-mono text-xs font-bold uppercase tracking-widest shadow-[3px_3px_0px_#000000] glass-sheen">
               what's up
             </span>
           </div>
@@ -121,7 +121,7 @@ export const HomeView = ({ onOpenCV, onOpenContact }) => {
             <div className="relative shrink-0">
               <div className="washi-tape tape-blue -top-3 -left-3 w-20 -rotate-12" />
               <div className="washi-tape tape-yellow -bottom-3 -right-3 w-20 rotate-12" />
-              <div className="bg-white p-3 pb-6 border border-black/20 rounded-md shadow-polaroid -rotate-3 hover:rotate-0 transition-transform w-52 sm:w-60">
+              <div className="bg-white p-3 pb-6 border border-black/20 rounded-md shadow-polaroid -rotate-3 hover:rotate-0 transition-all hover:scale-[1.02] w-52 sm:w-60">
                 <div className="aspect-[4/5] bg-gray-100 rounded overflow-hidden">
                   <img
                     src={profileData.profilePhoto}
@@ -138,21 +138,21 @@ export const HomeView = ({ onOpenCV, onOpenContact }) => {
             {/* Right Handwritten Text & Highlighter Stickers */}
             <div className="flex-1 text-center lg:text-left space-y-5">
               <p className="font-hand text-2xl sm:text-3xl text-gray-900 leading-relaxed">
-                Muhammad Iqbal Zafarullah is an <span className="bg-yellow-200 px-1 rounded">Informatics student</span> & product designer who works with local businesses and modern startups. ✨ He turns complex problems into visuals and software that are clear, considered, and built for real people. 🎨
+                Muhammad Iqbal Zafarullah is an <span className="bg-yellow-200/90 px-1.5 py-0.5 rounded shadow-sm">Informatics student</span> & product designer who works with local businesses and modern startups. ✨ He turns complex problems into visuals and software that are clear, considered, and built for real people. 🎨
               </p>
 
-              {/* Highlighter Sticker Badges */}
+              {/* Translucent Glass Highlighter Sticker Badges */}
               <div className="flex flex-wrap gap-2.5 justify-center lg:justify-start pt-2 font-mono text-xs font-bold">
-                <span className="highlighter-yellow px-4 py-2 rounded-md border border-yellow-400 shadow-[2px_2px_0px_rgba(0,0,0,0.1)] flex items-center gap-1.5 -rotate-1">
+                <span className="highlighter-yellow glass-sticker px-4 py-2 rounded-md border border-yellow-400 -rotate-1">
                   <span>Interaction Design</span> 🎨
                 </span>
-                <span className="highlighter-green px-4 py-2 rounded-md border border-green-400 shadow-[2px_2px_0px_rgba(0,0,0,0.1)] flex items-center gap-1.5 rotate-1">
+                <span className="highlighter-green glass-sticker px-4 py-2 rounded-md border border-green-400 rotate-1">
                   <span>Prototyping</span> 🧩
                 </span>
-                <span className="highlighter-pink px-4 py-2 rounded-md border border-pink-400 shadow-[2px_2px_0px_rgba(0,0,0,0.1)] flex items-center gap-1.5 -rotate-2">
+                <span className="highlighter-pink glass-sticker px-4 py-2 rounded-md border border-pink-400 -rotate-2">
                   <span>User Research</span> 🌸
                 </span>
-                <span className="highlighter-blue px-4 py-2 rounded-md border border-blue-400 shadow-[2px_2px_0px_rgba(0,0,0,0.1)] flex items-center gap-1.5 rotate-2">
+                <span className="highlighter-blue glass-sticker px-4 py-2 rounded-md border border-blue-400 rotate-2">
                   <span>Web Development</span> 👀
                 </span>
               </div>
@@ -166,7 +166,7 @@ export const HomeView = ({ onOpenCV, onOpenContact }) => {
               <GraduationCap size={16} className="text-black" />
               <span><strong>{profileData.education.university}</strong> — {profileData.education.degree} ({profileData.education.period})</span>
             </div>
-            <div className="bg-[#FEF08A] text-black border border-black/30 px-3 py-1 rounded font-bold">
+            <div className="bg-[#FEF08A]/90 backdrop-blur-sm text-black border border-black/30 px-3 py-1 rounded font-bold shadow-sm">
               GPA: {profileData.education.gpa} / {profileData.education.maxGpa}
             </div>
           </div>
